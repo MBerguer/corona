@@ -1,0 +1,42 @@
+- title: "Mortalidad"
+  title_detail: "Mortalidad del virus"
+  slug: "/mortalidad"
+  category: "Teorico"
+  color: "black"
+  images: "color"
+  cover: "./color/projects-color-001.jpg"
+  desc: "La mortalidad del virus en uruguay..... Bla bla bla"
+- title: "Egresos"
+  title_detail: "Egresos del virus"
+  slug: "/egresos"
+  category: "Data"
+  color: "#90BDDF"
+  images: "neon"
+  cover: "./neon/projects-neon-001.jpg"
+  desc: "Los egresos del virus... bla bla bla."
+- title: " ¿Qué nos dejó?"
+  title_detail: " ¿Qué nos dejó la pandemia hasta ahora?"
+  slug: "/que-nos-dejo"
+  category: "teorico"
+  color: "white"
+  images: "bw"
+  cover: "./bw/projects-bw-001.jpg"
+  desc: "Un montón de cosas... cosa 1, cosa 2, cosa (n)"
+- title: "Nosotros"
+  title_detail: " Hola, nosotros somos los colaboradores de este proyecto."
+  slug: "/nosotros"
+  category: "info"
+  color: "#1a202c"
+  images: "neon"
+  cover: "./bw/projects-bw-001.jpg"
+  desc: "Fio
+         Mati
+         Natalia
+         Fiorella
+         Valentina
+         Ramon
+         Virginia
+         Bruno
+         Martín"
+
+

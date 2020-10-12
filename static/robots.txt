@@ -1,0 +1,3 @@
+User-agent: *
+
+sitemap: https://corona.lekoarts.de/sitemap.xml

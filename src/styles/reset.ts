@@ -218,6 +218,11 @@ const reset = css`
   .st77{fill:#F4C738;}
   .st78{fill:none;}
   .st79{fill:#806561;}
+  
+  iframe {
+    width: 100%;
+    height: 500px;
+  }
 `
 
 export default reset

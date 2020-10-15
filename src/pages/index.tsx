@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
 import styled from 'styled-components'
 import { animated, useSpring, config } from 'react-spring'
 import Layout from '../components/layout'
@@ -97,20 +96,17 @@ const Index: React.FunctionComponent<PageProps> = ({ data: { firstProject, three
   return (
     <Layout>
       <SEO />
-      <Area style={pageAnimation}>
-        <FirstProject to={firstProject.slug} aria-label={`View project "${firstProject.title}"`}>
-          <Img fluid={firstProject.cover.childImageSharp.fluid} />
-          <span>{firstProject.title}</span>
-        </FirstProject>
-        <ThreeProjects>
-          {threeProjects.nodes.map((project) => (
-            <GridItem to={project.slug} key={project.slug} aria-label={`View project "${project.title}"`}>
-              <Img fluid={project.cover.childImageSharp.fluid} />
-              <span>{project.title}</span>
-            </GridItem>
-          ))}
-        </ThreeProjects>
-      </Area>
+      <h1>
+        HOLA!!!
+      </h1>
+
+      Te invito a ver la sección con interesantes <a href="graficas/"> graficas </a>
+
+      <p><br/> <br/> <br/>
+        Aqui podemos poner información muy interesante también
+      </p>
+
+
     </Layout>
   )
 }

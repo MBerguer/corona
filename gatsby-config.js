@@ -78,6 +78,19 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
-    'gatsby-plugin-netlify',
+    {
+      resolve: "gatsby-plugin-netlify",
+      options: {
+        mergeSecurityHeaders: false,
+        headers: {
+          '/*': ['X-Frame-Options: sameorigin'],
+          "/**/*.html": ["cache-control: public, max-age=300"],
+          "/static/*": ["cache-control: public, max-age=31536000, immutable"],
+          "/*.js": ["cache-control: public, max-age=31536000, immutable"],
+          "/*.css": ["cache-control: public, max-age=31536000, immutable"],
+          "/sw.js": ["cache-control: public, max-age=0, must-revalidate"],
+        },
+      },
+    },
   ],
 }

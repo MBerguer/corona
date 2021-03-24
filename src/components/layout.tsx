@@ -86,6 +86,9 @@ const GlobalStyles = createGlobalStyle`
       color: ${theme.colors.primary};
     }
   }
+  .note{
+    opacity: 0.7;
+  }
   
   ${reset}
 `
@@ -152,6 +155,7 @@ const Nav = styled(Flex)<{ color: string }>`
     @media (max-width: ${(props) => props.theme.breakpoints[2]}) {
       font-size: ${(props) => props.theme.fontSizes[2]};
       margin-left: ${(props) => props.theme.space[4]};
+      margin-bottom: 0;
     }
 
     @media (max-width: ${(props) => props.theme.breakpoints[1]}) {

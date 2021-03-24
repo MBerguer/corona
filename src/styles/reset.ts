@@ -223,6 +223,23 @@ const reset = css`
     width: 100%;
     height: 500px;
   }
+
+
+  @media screen and (mIN-width: 1000px) {
+    main {
+      padding-right: 3rem;
+    }
+  }
+
+  main > p {
+    text-align: justify;
+  }
+
+  @media screen and (max-width: 1000px) {
+    main {
+      padding: 1rem;
+    }
+  }
 `
 
 export default reset

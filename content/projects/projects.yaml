@@ -1,7 +1,7 @@
 - title: "Mortalidad"
   title_detail: "Mortalidad del virus"
   slug: "/mortalidad"
-  category: "Teorico"
+  category: "Gráficas / Data"
   color: "black"
   images: "color"
   cover: "./color/projects-color-001.jpg"
@@ -9,19 +9,28 @@
 - title: "Egresos"
   title_detail: "Egresos del virus"
   slug: "/egresos"
-  category: "Data"
+  category: "Gráficas / Data"
   color: "#90BDDF"
   images: "neon"
   cover: "./neon/projects-neon-001.jpg"
   desc: "Los egresos del virus... bla bla bla."
-- title: " ¿Qué nos dejó?"
-  title_detail: " ¿Qué nos dejó la pandemia hasta ahora?"
-  slug: "/que-nos-dejo"
-  category: "teorico"
+# - title: " ¿Qué nos dejó?"
+#   title_detail: " ¿Qué nos dejó la pandemia hasta ahora?"
+#   slug: "/que-nos-dejo"
+#   category: "teorico"
+#   color: "white"
+#   images: "bw"
+#   cover: "./bw/projects-bw-001.jpg"
+#   desc: "Un montón de cosas... cosa 1, cosa 2, cosa (n)"
+- title: "Causas"
+  title_detail: "Causas de mortalidad global"
+  slug: "/causas"
+  category: "Gráficas / Data"
   color: "white"
   images: "bw"
   cover: "./bw/projects-bw-001.jpg"
   desc: "Un montón de cosas... cosa 1, cosa 2, cosa (n)"
+  link: ""
 - title: "Nosotros"
   title_detail: " Hola, nosotros somos los colaboradores de este proyecto."
   slug: "/nosotros"
@@ -31,12 +40,11 @@
   cover: "./bw/projects-bw-001.jpg"
   desc: "Fio
          Mati
-         Natalia
-         Fiorella
-         Valentina
-         Ramon
-         Virginia
-         Bruno
-         Martín"
+         Naty
+         Vale
+         Ram
+         Vir
+         Bruce
+         Tíncho"
 
 

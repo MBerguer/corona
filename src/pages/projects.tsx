@@ -43,10 +43,12 @@ const Projects: React.FunctionComponent<PageProps> = ({ data: { projects } }) =>
       <SEO title="Projects | Corona" />
       <Area style={pageAnimation}>
         {projects.nodes.map((project) => (
+         
           <GridItem key={project.slug} to={project.slug} aria-label={`View project "${project.title}"`}>
             <Img fluid={project.cover.childImageSharp.fluid} />
             <span>{project.title}</span>
           </GridItem>
+
         ))}
       </Area>
     </Layout>
@@ -68,6 +70,7 @@ export const query = graphql`
             }
           }
         }
+        link
       }
     }
   }

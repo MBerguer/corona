@@ -6,7 +6,7 @@
   link: "/egresos"
 - name: "Causas"
   link: "/causas"
-- name: "Nosortos"
+- name: "Nosotros"
   link: "/nosotros"
 #- name: "About"
 #  link: "/about"

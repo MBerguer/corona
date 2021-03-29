@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import { AnimatedBox, Box } from "../elements";
 import styled from "styled-components";
 import { transparentize } from "polished";
+import { LazyPlot } from "../components/LazyPlot";
 
 const PBox = styled(AnimatedBox)`
   max-width: 1400px;

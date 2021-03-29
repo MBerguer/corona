@@ -4,6 +4,12 @@ import Layout from "../components/layout";
 import { AnimatedBox, Box } from "../elements";
 import styled from "styled-components";
 import { transparentize } from "polished";
+import {LazyPlot} from '../components/LazyPlot'
+
+import mortalidad1 from '../components/dataGraphs/mortalidad1'
+import mortalidad2 from '../components/dataGraphs/mortalidad2'
+import mortalidad3 from '../components/dataGraphs/mortalidad3'
+import mortalidad4 from '../components/dataGraphs/mortalidad4'
 
 const PBox = styled(AnimatedBox)`
   max-width: 1400px;
@@ -71,7 +77,8 @@ const Graficas = () => {
       </PBox>
       <Content bg={"#fafafa"}>
         <PBox style={imagesAnimation} px={[6, 6, 8, 10]}>
-          <iframe src="/graphs/mortalidad/fig_1.html" />
+          <LazyPlot {...mortalidad1} />
+          {/* <iframe src="/graphs/mortalidad/fig_1.html" /> */}
           <Description style={descAnimation}>
             <div className='note' dangerouslySetInnerHTML={{ __html: "Mortalidad 2019 según semana epidemiológica. Se descartan los fallecidos de los días 29, 30 y 31 de diciembre por corresponder a la primera semana epidemiológica del 2020" }} />
           </Description>
@@ -86,7 +93,8 @@ const Graficas = () => {
       </PBox>
       <Content bg={"#fafafa"}>
         <PBox style={imagesAnimation} px={[6, 6, 8, 10]}>
-          <iframe src="/graphs/mortalidad/fig_2.html" />
+        <LazyPlot {...mortalidad2} />
+        {/* <iframe src="/graphs/mortalidad/fig_2.html" /> */}
         </PBox>
       </Content>
 
@@ -104,7 +112,8 @@ La zona Sur es la que presenta mayor cantidad de fallecidos por ser la que acumu
       </PBox>
       <Content bg={"#fafafa"}>
         <PBox style={imagesAnimation} px={[6, 6, 8, 10]}>
-          <iframe src="/graphs/mortalidad/fig_3.html" />
+          <LazyPlot {...mortalidad3} />
+          {/* <iframe src="/graphs/mortalidad/fig_3.html" /> */}
         </PBox>
       </Content>
 
@@ -116,7 +125,8 @@ La zona Sur es la que presenta mayor cantidad de fallecidos por ser la que acumu
       </PBox>
       <Content bg={"#fafafa"}>
         <PBox style={imagesAnimation} px={[6, 6, 8, 10]}>
-          <iframe src="/graphs/mortalidad/fig_4.html" />
+          <LazyPlot {...mortalidad4} />
+          {/* <iframe src="/graphs/mortalidad/fig_4.html" /> */}
         </PBox>
       </Content>
     </Layout>

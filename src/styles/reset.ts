@@ -239,7 +239,23 @@ const reset = css`
     main {
       padding: 1rem;
     }
+
+    .wrapper {
+      grid-template-columns: 1fr!important;
+    }
   }
+
+
+  .wrapper {
+    max-width: 100%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wrapper img {
+    max-width: 100%;
+  }
+
 `
 
 export default reset

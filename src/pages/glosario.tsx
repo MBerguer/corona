@@ -67,7 +67,7 @@ const Graficas = () => {
           <p>
             <strong>Vigilancia epidemiológica</strong>: recolección sistemática, continua, oportuna y confiable de información relevante y necesaria sobre algunas condiciones de salud de la población. El análisis e interpretación de los datos debe proporcionar bases para la toma de decisiones y al mismo tiempo ser utilizada para su difusión.</p>
           <p>
-            Fuente: www.paho.org/spanish/ad/dpc/nc/guidelines-5-sp.PDF</p>
+          Fuente: <a href="www.paho.org/spanish/ad/dpc/nc/guidelines-5-sp.PDF">www.paho.org/spanish/ad/dpc/nc/guidelines-5-sp.PDF</a></p>
           <p>
             <strong>Calendario epidemiológico</strong>: Para realizar las acciones de vigilancia epidemiológica, se requiere agrupar los padecimientos o eventos epidemiológicos alrededor de un período de tiempo determinado. Este período es generalmente de una semana y se le conoce como semana epidemiológica; a su vez, a la división de los 365 días del año en semanas epidemiológicas, se le conoce como calendario epidemiológico (1), el cual es un instrumento de estandarización de la variable tiempo para los fines de la vigilancia epidemiológica. La importancia de la división y sobre todo de la utilización de las semanas epidemiológicas, radica en que permite la comparación de eventos epidemiológicos sucedidos en determinado año o período dentro de un año, con los de años previos. Facilita asimismo, la comparación entre países, dado que se trata de una metodología epidemiológica adoptada oficialmente en el ámbito internacional (2). Las semanas epidemiológicas que utilizaremos, al igual que el sistema que utiliza Uruguay, el CDC, inician en domingo y terminan en sábado; para designar la primera semana epidemiológica del año, se ubica el primer sábado de enero que incluya en los días inmediatamente precedentes, cuatro o más días del mes de enero, aun cuando esa primera semana se inicie en diciembre.</p>
           <p>
@@ -76,7 +76,7 @@ const Graficas = () => {
             En el caso de los años incluidos en el presente estudio, 2017 a 2019, la primera semana epidemiológica del año 2017 inicia el domingo primero de enero razón por la cual se incluyen todos los fallecimientos ocurridos desde el inicio del período considerado. Sin embargo, la última semana epidemiológica del año 2019 finaliza el 28 de diciembre razón por la cual los fallecimientos ocurridos los días 29, 30 y 31 de diciembre no han sido considerados en los análisis realizados por semana epidemiológica.</p>
           <ol>
             <li>
-                <p>Puede acceder a visualizar calendario epidemiológico de distintos años en el siguiente link: www.ministeriodesalud.go.cr</p>
+                <p>Puede acceder a visualizar calendario epidemiológico de distintos años en el siguiente link: <a href="www.ministeriodesalud.go.cr">www.ministeriodesalud.go.cr</a></p>
             </li>
             <li>
                 <p>Los sistemas más comunes cuando se trata de semanas epidemiológicas son los sistemas CDC e ISO. El sistema CDC se utiliza en países como Estados Unidos, Canadá, Australia, India, Egipto y Arabia Saudita. El sistema ISO se utiliza en todos los países europeos y la mayoría de los asiáticos. El CDC define la semana (semana MMWR ) como siete días, comenzando con el domingo y terminando con el sábado. La ISO define la semana (semana ISO ) como siete días, comenzando con el lunes y terminando con el domingo.</p>
@@ -104,12 +104,15 @@ const Graficas = () => {
             El médico puede considerar que una sola causa es suficiente para explicar la muerte.<br />
             Estadísticamente importa consignar la CBM. A posteriori de completado el CD se procede a la codificación, para la cual se utiliza la Clasificación Internacional de Enfermedades de la Organización Mundial de la Salud (OMS), (CIE) 10ª revisión.<br />
             Las principales causas de muerte pueden agruparse en los siguientes grupos:<br />
-            * Tumores (neoplasias) Códigos C00-D48<br />
-            * Enfermedades del sistema circulatorio Códigos I00-I99<br />
-            * Síntomas, signos y hallazgos anormales clínicos y de laboratorio, no clasificados en otra parte. Códigos R00-R99<br />
-            * Enfermedades del sistema respiratorio Códigos J00- J99<br />
-            * Causas externas de morbilidad y de mortalidad Códigos V01-Y98<br />
-            * Resto de las causas.
+            
+            Tumores (neoplasias) Códigos C00-D48<br />
+            <ul>
+              <li>Enfermedades del sistema circulatorio Códigos I00-I99</li>
+              <li>Síntomas, signos y hallazgos anormales clínicos y de laboratorio, no clasificados en otra parte. Códigos R00-R99</li>
+              <li>Enfermedades del sistema respiratorio Códigos J00- J99</li>
+              <li>Causas externas de morbilidad y de mortalidad Códigos V01-Y98</li>
+              <li>Resto de las causas.</li>
+            </ul>
           </p>
           <p>En particular podría interesar:<br />
             Tumores malignos C00-C97<br />
@@ -121,11 +124,13 @@ const Graficas = () => {
             Observación: en marzo de 2020 la OMS proporcionó un documento acerca de los nuevos códigos para COVID-19.<br />
             Los códigos nuevos para COVID-19 son:<br />
             U07.1 COVID-19, virus identificado.<br />
-            * Caso confirmado con resultado positivo de la prueba U07.2 COVID-19, virus no identificado<br />
-            * Diagnosticado clínicamente y epidemiológicamente con COVID-19<br />
-            * Caso probable de COVID-19<br />
-            * Caso sospechoso de COVID-19<br />
-            Disponible en: <a href="https://www.paho.org/arg/index.php?option=com_docman&amp;view=download&amp;alias=468-covid-cie-codigos-2020-03-25-espanol&amp;category_slug=documentos&amp;Itemid=624#" class="uri">https://www.paho.org/arg/index.php?option=com_docman&amp;view=download&amp;alias=468-covid-cie-codigos-2020-03-25-espanol&amp;category_slug=documentos&amp;Itemid=624#</a>:~:text=Ambas%20categor%C3%ADas%2C%20U07.,c%C3%B3digos%20para%20la%20CIE%2D11.<br />
+            <ul>
+              <li>Caso confirmado con resultado positivo de la prueba U07.2 COVID-19, virus no identificado</li>
+              <li>Diagnosticado clínicamente y epidemiológicamente con COVID-19</li>
+              <li>Caso probable de COVID-19</li>
+              <li>Caso sospechoso de COVID-19</li>              
+            </ul>
+            Disponible en: <a href="https://www.paho.org/arg/index.php?option=com_docman&amp;view=download&amp;alias=468-covid-cie-codigos-2020-03-25-espanol&amp;category_slug=documentos&amp;Itemid=624#" class="uri">https://www.paho.org/arg/index.php?option=com_docman&amp;view=download&amp;alias=468-covid-cie-codigos-2020-03-25-espanol&amp;category_slug=documentos&amp;Itemid=624#</a><br />
             <br />
             <strong>Mortalidad proporcional</strong>: Expresa el porcentaje de defunciones por una causa o grupo de causas, en un lugar y período determinado, en relación al total de defunciones en el mismo lugar y período.<br />
             

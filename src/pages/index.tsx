@@ -8,10 +8,11 @@ import SEO from "../components/SEO";
 import { ChildImageSharp } from "../types";
 import { MDXProvider } from "@mdx-js/react";
 import { LazyPlot } from "../components/LazyPlot";
-import img_2020 from "../images/2020.png";
+import img_2020 from "../images/2020_2.png";
 import img_2021 from "../images/2021.png";
 import intro_1 from '../components/dataGraphs/intro_1';
 import intro_2 from '../components/dataGraphs/intro_2';
+import { Accordion } from "../components/Accordion";
 
 import { AnimatedBox, Box } from "../elements";
 import { transparentize } from "polished";
@@ -126,6 +127,11 @@ const Index: React.FunctionComponent<PageProps> = ({
     <MDXProvider components={components}>
       <Layout>
         <SEO />
+
+        <h1>
+          Introduccion
+        </h1>
+
         <p>
           A medida que el mundo y Uruguay avanzaron en muertes por la COVID-19, tuvimos que enfrentar el hecho de que estábamos adoptando un enfoque demasiado estrecho para manejar este brote de un nuevo coronavirus. Hemos visto la causa de esta crisis como una enfermedad infecciosa. Las intervenciones se han centrado principalmente en cortar las líneas de transmisión viral.
         </p>
@@ -144,29 +150,47 @@ const Index: React.FunctionComponent<PageProps> = ({
         <p>
           El mayor impacto de la pandemia en el país en términos de casos y fallecimientos empezó en enero de 2021. Sin embargo, además de los de 181 fallecimientos del año 2020, los impactos de la pandemia iniciaron desde el momento en que comenzaron a ocurrir restricciones en la continuidad de la atención sanitaria.
         </p>
-
+        <br/><br/><br/>
         <div className={"wrapper"}>
+          <p className={"p-full-width"}>
+            En los calendarios a continuación se muestran los fallecimientos por día, en los años 2020 y en el primer semestre del 2021
+          </p>
           <img src={img_2020} alt="2020" />
           <img src={img_2021} alt="2021" />
         </div>
         <p>
           Si se compara con las principales causas de mortalidad en 2019, se observa que en los meses de abril y mayo de 2021 los fallecimientos por COVID-19 superaron a los fallecimientos esperados por cualquiera de los tres principales grupos de causas de muerte previos a la pandemia en nuestro país.
         </p>
-        <p>
-          Distribución de fallecimientos por covid 19 y los tres principales grupos de causa de muerte según semana epidemiológica en Uruguay
-        </p>
-        <p>
-          Nota: Los fallecimientos de los 3 principales grupos de causas de muerte son con los datos de 2019 y su respectivo intervalo de confianza, mientras que los fallecimientos por covid-19 son datos correspondientes al 2021
-        </p>
+        <br />
+        <b>
+          Distribución de fallecimientos por COVID-19 y los tres principales grupos de causa de muerte según semana epidemiológica en Uruguay
+        </b>
+
 
         <Content bg={"#fafafa"}>
           <PBox px={[6, 6, 8, 10]}>
             <LazyPlot {...intro_1} />
           </PBox>
         </Content>
+        <Accordion
+          title="Nota"
+          content="Los fallecimientos de los 3 principales grupos de causas de muerte son con los datos de 2019 y su respectivo intervalo de confianza, mientras que los fallecimientos por COVID-19 son datos correspondientes al 2021"
+        />
+
+        <br />
+
+        <b>
+          Años de vida promedio perdidos por COVID-19
+        </b>
+
         <p>
           Para poder comparar el efecto de la COVID-19 respecto a lo que ha sucedido en años prepandemia con los fallecimientos por enfermedades del sistema respiratorio (ESR), se analizan los AVP promedio por mes en los primeros seis meses del año 2019 para ESR y del año 2021 para COVID-19.
         </p>
+
+        <br /><br /><br />
+        <b>
+          Distribución de AVP promedio por mes según causa
+        </b>
 
         <Content bg={"#fafafa"}>
           <PBox px={[6, 6, 8, 10]}>
@@ -175,7 +199,7 @@ const Index: React.FunctionComponent<PageProps> = ({
         </Content>
         
         <p>
-        El gráfico revela que si bien en todos los meses analizados los AVP promedio por COVID-19 superan a los AVP promedio por ESR, esta diferencia se va ampliando mostrando como la COVID-19 afectó a personas de grupos etarios más jóvenes, llegando en el mes de junio a duplicar el valor promedio de AVP.
+          El gráfico revela en todos los meses analizados los AVP promedio por COVID-19 superan a los AVP promedio por Enfermedades del Sistema Respiratorio (ESR), esta diferencia aumenta con el paso de meses y evidencia como la COVID-19 afectó a personas de grupos etarios más jóvenes. En el mes de junio los AVP promedio por COVID-19 duplican el valor de los AVP promedio por ESR.
         </p>
 
       </Layout>

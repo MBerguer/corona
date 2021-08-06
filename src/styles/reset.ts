@@ -256,6 +256,19 @@ const reset = css`
     max-width: 100%;
   }
 
+  .plot-container.plotly{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .p-full-width{
+    margin:10px 0;
+    text-align:center;
+    grid-column: 1 / -1;
+  }
+
 `
 
 export default reset

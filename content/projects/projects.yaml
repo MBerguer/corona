@@ -31,20 +31,3 @@
   cover: "./bw/projects-bw-001.jpg"
   desc: "Un montón de cosas... cosa 1, cosa 2, cosa (n)"
   link: ""
-- title: "Nosotros"
-  title_detail: " Hola, nosotros somos los colaboradores de este proyecto."
-  slug: "/nosotros"
-  category: "info"
-  color: "#1a202c"
-  images: "neon"
-  cover: "./bw/projects-bw-001.jpg"
-  desc: "Fio
-         Mati
-         Naty
-         Vale
-         Ram
-         Vir
-         Bruce
-         Tíncho"
-
-

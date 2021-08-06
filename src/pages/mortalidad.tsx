@@ -92,7 +92,7 @@ const Graficas = () => {
 
       <br/><br/><br/>
 
-      <b>Total de fallecidos y tasa específica cada 100.000 habitantes en Uruguay por todas las causas según semana epidemiológica y sexo, por año (es el título de la gráfica)</b>
+      <b>Total de fallecidos y tasa específica cada 100.000 habitantes en Uruguay por todas las causas según semana epidemiológica y sexo, por año</b>
       <LazyPlot {...mortalidad2} />
       <p>          
         El análisis para los años en estudio muestra que los fallecimientos según sexo son similares en números absolutos mientras que en las tasas específicas se observa un incremento para el caso de los hombres. Este comportamiento se explica por una población total de mujeres mayor que de hombres.
@@ -140,13 +140,8 @@ const Graficas = () => {
         En esta sección, se analiza la mortalidad según causa. <br/>
         Los gráficos presentados se hacen en base al agregrado de los tres años en estudio (2017, 2018 y 2019)
       </p>
-
-      <br/><br/><br/>
-
-      <Category style={pageAnimation}>Causas</Category>
-      
+      <br/>
       <p>
-        En esta sección se analizan los fallecimientos según grandes grupos de causas de muerte (* acá hay que hacer una referencia al glosario donde están definidos los grandes grupos).<br />
         En el gráfico a continuación se presentan los totales de fallecimientos distribuídos por causa según edad. El comportamiento es el esperado:
       </p>
       <ul>
@@ -158,21 +153,26 @@ const Graficas = () => {
       <br/><br/><br/><br/>
 
 
-      <b>Cantidad de fallecimientos promedio por edad según grandes grupos de causas de muerte</b>
+      <b>Cantidad de fallecimientos promedio de los años 2017, 2018 y 2019 por edad según grandes grupos de causas de muerte</b>
       <LazyPlot {...causas1} />
 
-      <p>          
-        Al analizar la relevancia de cada uno de los grandes grupos de causas de muerte dentro de cada año de edad, hasta los 40 años el grupo de las causas externas es el que representa la mayor proporción de muertos(*). Los fallecimientos por causas externas son principalmente por los sucidios, accidentes y homicidios.
-      </p>
-      <p>          
-        (*) A modo de ejemplo, a los 18 años de edad el total de fallecidos de la suma de los tres años en estudio fue de 121, de estos, 91 (75,2%) fallecimientos fueron por causas externas, 6 por tumores, 3 por enfermedades del sistema circulatorio, 2 por enfermedades del sistema respiratorio y 19 por causas mal definidas y otras causas.
-      </p>
 
       <br/><br/><br/>
 
       <b>Mortalidad proporcional por edad según grandes grupos de causas de muerte</b>
       <LazyPlot {...causas2} />
+
+      <p>          
+        Al analizar la relevancia de cada uno de los grandes grupos de causas de muerte dentro de cada año de edad, hasta los 40 años el grupo de las causas externas es el que representa la mayor proporción de muertos(*). Los fallecimientos por causas externas son principalmente por sucidios, accidentes y homicidios.
+      </p>
+      <p>          
+        (*) A modo de ejemplo, a los 18 años de edad el total de fallecidos de la suma de los tres años en estudio fue de 121, de estos, 91 (75,2%) fallecimientos fueron por causas externas, 6 por tumores, 3 por enfermedades del sistema circulatorio, 2 por enfermedades del sistema respiratorio y 19 por causas mal definidas y otras causas.
+      </p>
+
+
       <br/><br/><br/>
+
+
 
       <b>Mortalidad proporcional para el sexo masculino por edad según grandes grupos de causas de muerte</b>
       <LazyPlot {...causas3} />
